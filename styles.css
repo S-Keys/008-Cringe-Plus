@@ -5,14 +5,15 @@
     --marrom-contraste: #594B02;
     --cor-de-fundo: #221F26;
     --fonte-principal: 'Orbitron';
-    --fonte-logo: 'Delicious Handrawn';
+    --fonte-logo: 'Monoton';
+    --largura-do-botao: 25em;
 }
 
 body{
     background-color: var(--cor-de-fundo);
     color: var(--cinza-principal);
     font-family: var(--fonte-principal);
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
 }
 
@@ -21,25 +22,27 @@ body{
     padding: 0;
 }
 
-.principal{
+.container__principal{
     background-image: url("img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-.container{
+    align-items:center;
+    text-align:center;
     height: 100vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 43% 60%;
 }
 
 .container__botao{
     background-color: var(--amarelo-secundario);
-    border-radius: 3px;
     padding: 0.5em;
+    border-radius: 3px;
+    border: 3px solid var(--amarelo-secundario);
     color: var(--cor-de-fundo);
     display: block;
     text-decoration: none;
+    margin: 1em auto;
+    width: var(--largura-do-botao);
 }
 
 .container__botao_secundario{
@@ -50,17 +53,41 @@ body{
     color: var(--cinza-principal);
     display: block;
     text-decoration: none;
+    margin: 1em auto;
+    width: var(--largura-do-botao);
 }
 
 .container__titulo{
-    font-size: 28px;
+    font-size: 2.5em;
     font-weight: 700;
 }
 
 strong {
     font-family: var(--fonte-logo);
-    font-size: 40px;
-    font-weight: 400;
-    color: var(--ouro-contraste);
-    text-shadow: 0 0.8px 0.8px rgb(0,0,0);
+    font-size: 1em;
+    font-weight: 100;
+    color: var(--amarelo-secundario);
+}
+
+.container__imagem{
+    margin: 1em 0;
+    width: 40%;
+}
+
+.container__caixa{
+    margin: 0 1em;
+}
+
+.container__secundario{
+    align-items:center;
+    text-align:center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 45% 58%;
+    font-size: 2em;
+    margin: 0 3em;
+}
+
+.secundario__imagem{
+    width: 80%;
 }
