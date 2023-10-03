@@ -7,6 +7,7 @@
     --fonte-principal: 'Orbitron';
     --fonte-logo: 'Monoton';
     --largura-do-botao: 25em;
+    --botao-efeito:var(--marrom-contraste);
 }
 
 body{
@@ -83,11 +84,91 @@ strong {
     text-align:center;
     height: 100vh;
     display: grid;
-    grid-template-columns: 45% 58%;
+    grid-template-columns: 45% 60%;
     font-size: 2em;
     margin: 0 3em;
 }
 
 .secundario__imagem{
     width: 80%;
+}
+
+.container__secundario__invertido{
+    align-items:center;
+    text-align:center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% 45%;
+    font-size: 2em;
+    margin: 0 3em;
+}
+
+.secundario__imagem__invertido{
+    width: 90%;
+}
+
+.secundario__botao{
+    display: inline-block;
+    width: auto;
+    font-size: 0.8em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 40px;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    color: var(--cinza-principal);
+    margin: 5em 0;
+
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--cinza-principal);
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.lista__link a{
+    text-decoration:none;
+    color: var(--marrom-contraste);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 3em 1em;
+}
+
+.lista__link a:hover{
+    color: var(--amarelo-secundario);
+}
+
+.container__botao:hover{
+    background: var(--marrom-contraste);
+    color: var(--ouro-contraste);
+}
+
+.container__botao_secundario:hover{
+    background: var(--marrom-contraste);
+    color: var(--ouro-contraste);
 }
