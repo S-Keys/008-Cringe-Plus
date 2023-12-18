@@ -82,7 +82,7 @@ strong {
 .container__secundario{
     align-items:center;
     text-align:center;
-    height: 100vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: 45% 60%;
     font-size: 2em;
@@ -96,7 +96,7 @@ strong {
 .container__secundario__invertido{
     align-items:center;
     text-align:center;
-    height: 100vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: 60% 45%;
     font-size: 2em;
@@ -115,6 +115,7 @@ strong {
 
 .dispositivos{
     text-align: center;
+    margin-top: 10em;
 }
 
 .dispositivos__titulo{
@@ -171,4 +172,75 @@ strong {
 .container__botao_secundario:hover{
     background: var(--marrom-contraste);
     color: var(--ouro-contraste);
+}
+
+.container__imagem__mobile, .imagem__mobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container__principal{
+        display: block;
+        background-image: none;
+        height: 90vh;
+    }
+
+    .secundario__imagem__invertido{
+        display: none;
+    }
+
+    .imagem__mobile{
+        display: block;
+    }
+    
+    .container__imagem__mobile{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    
+    .container__imagem__mobile, .dispositivos__lista, .rodape__lista, .container__secundario, .container__secundario__invertido{
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .container__titulo{
+        font-size: 2em;
+    }
+
+    .container__secundario, .container__secundario__invertido{
+        font-size: 1.4em;
+        height: 50vh;
+    }
+
+    .container__imagem{
+        width: 50vw;
+    }
+
+    .container__caixa{
+        margin: 0.5em auto;
+    }
+
+    .imagem__mobile{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container__botao, .container__botao_secundario{
+        width: 70vw;
+    }
+
+    .dispositivos{
+        margin-top: 0;
+    }}
+
+    .dispositivos__titulo, .lista__item{
+        font-size: 1.5em;
+    }
+
+    .icone {
+        width: 60vw;
+    }
 }
